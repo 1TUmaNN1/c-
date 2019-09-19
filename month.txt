@@ -1,0 +1,30 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int month;
+	int day;
+	cin >> day;
+	cin >> month;
+	if (month == 1 || 3 || 5 || 7 || 8 || 10 || 12 && day > 0 || day < 32) {
+		cout << "there is such a day in 2019";
+	}
+	else if (month == 1 || 3 || 5 || 7 || 8 || 10 || 12 && day < 0 || day > 32) {
+		cout << "there is no such day in 2019";
+	}
+	else if (month == 4 || 6 || 9 || 11 && day > 0 || day < 31) {
+		cout << "there is such a day in 2019";
+	}
+	else if (month == 4 || 6 || 9 || 11 && day < 0 || day > 31) {
+		cout << "there is no such day in 2019";
+	}
+	else if (month == 2 && day > 0 || day < 29) {
+		cout << "there is such a day in 2019";
+	}
+	else if (month == 2 && day < 0 || day > 29) {
+		cout << "there is no such day in 2019";
+	}
+	return 0;
+}
