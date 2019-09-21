@@ -12,6 +12,7 @@ int main()
 		cin >> b;
 		cout << "enter variable c = ";
 		cin >> c;
+		cout << endl;
 		if (a == 0)
 		{
 			if (c == 0)
@@ -35,6 +36,7 @@ int main()
 			y = sqrt(-d) / (2 * a);
 			cout << "first root: " << x << " + i * " << y << endl;
 			cout << "second root: " << x << " - i * " << y << endl;
+			cout << endl << "or" << endl << endl << "no roots" << endl;
 			return 0;
 		}
 		x = (-b + sqrt(d)) / (2 * a);
