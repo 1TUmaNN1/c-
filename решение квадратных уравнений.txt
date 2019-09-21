@@ -1,0 +1,45 @@
+#include "pch.h"
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+		double a, b, c, d, x, y;
+		cout << "enter variable a = ";
+		cin >> a;
+		cout << "enter variable b = ";
+		cin >> b;
+		cout << "enter variable c = ";
+		cin >> c;
+		if (a == 0)
+		{
+			if (c == 0)
+			{
+				if (b == 0)
+				{
+					cout << "x eclipce (-ifinity; +infinity)" << endl;
+					return 0;
+				}
+				cout << 0 << endl;
+				return 0;
+			}
+			x = b / c;
+			cout << x << endl;
+			return 0;
+		}
+		d = b * b - 4 * a * c;
+		if (d < 0)
+		{
+			x = -b / (2 * a);
+			y = sqrt(-d) / (2 * a);
+			cout << "first root: " << x << " + i * " << y << endl;
+			cout << "second root: " << x << " - i * " << y << endl;
+			return 0;
+		}
+		x = (-b + sqrt(d)) / (2 * a);
+		y = (-b - sqrt(d)) / (2 * a);
+		cout << "first root = " << x << endl;
+		cout << "second root = " << y << endl;
+		return 0;
+}
