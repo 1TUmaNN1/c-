@@ -1,30 +1,31 @@
 #include "pch.h"
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-	int month;
-	int day;
-	cin >> day;
-	cin >> month;
-	if (month == 1 || 3 || 5 || 7 || 8 || 10 || 12 && day > 0 || day < 32) {
-		cout << "there is such a day in 2019";
+	int a, b;
+	cout << "enter day: ";
+	cin >> a;
+	cout << "enter mouth: ";
+	cin >> b;
+	cout << endl;
+	if (a < 32 && a > 0 && (b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12))
+	{
+		cout << "there is such a day!" << endl;
+	} 
+	else if (a < 31 && a > 0 && (b == 4 || b == 6 || b == 9 || b == 11))
+	{
+		cout << "there is such a day!" << endl;
+		return 0;
 	}
-	else if (month == 1 || 3 || 5 || 7 || 8 || 10 || 12 && day < 0 || day > 32) {
-		cout << "there is no such day in 2019";
+	else if (a < 29 && a > 0 && (b == 2))
+	{
+		cout << "there is such a day!" << endl;
+			return 0;
 	}
-	else if (month == 4 || 6 || 9 || 11 && day > 0 || day < 31) {
-		cout << "there is such a day in 2019";
+	else {
+		cout << "there is no such day :(" << endl;
 	}
-	else if (month == 4 || 6 || 9 || 11 && day < 0 || day > 31) {
-		cout << "there is no such day in 2019";
-	}
-	else if (month == 2 && day > 0 || day < 29) {
-		cout << "there is such a day in 2019";
-	}
-	else if (month == 2 && day < 0 || day > 29) {
-		cout << "there is no such day in 2019";
-	}
-	return 0;
 }
