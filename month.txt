@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
 	int a, b;
-	cout << "enter day: ";
+	cout << "enter day by numbers: ";
 	cin >> a;
-	cout << "enter mouth: ";
+	cout << "enter mouth by numbers: ";
 	cin >> b;
 	cout << endl;
 	if (a < 32 && a > 0 && (b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12))
